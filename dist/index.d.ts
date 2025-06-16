@@ -1,1 +1,21 @@
-export {};
+export * from './isContainsKorean';
+export * from './isKoreanSingleCharacter';
+export * from './koreanAppendRo';
+export * from './koreanAppendRul';
+export * from './koreanGetRo';
+export * from './koreanGetRul';
+import isContainsKorean from './isContainsKorean';
+import isKoreanSingleCharacter from './isKoreanSingleCharacter';
+import koreanAppendRo from './koreanAppendRo';
+import koreanAppendRul from './koreanAppendRul';
+import koreanGetRo from './koreanGetRo';
+import koreanGetRul from './koreanGetRul';
+declare const _default: {
+    isContains: typeof isContainsKorean;
+    isSingleCharacter: typeof isKoreanSingleCharacter;
+    appendRo: typeof koreanAppendRo;
+    appendRul: typeof koreanAppendRul;
+    getRo: typeof koreanGetRo;
+    getRul: typeof koreanGetRul;
+};
+export default _default;
